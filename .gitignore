@@ -16,3 +16,4 @@ err.txt
 *.bin
 *.ipk
 *.opk
+.vscode
