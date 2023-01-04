@@ -72,7 +72,7 @@ ifeq ($(PROFILE),APPLY)
 	C_ARCH  += -fprofile-use=$(PWD)
 endif
 
-CFLAGS := $(C_ARCH) -mplt -mno-shared -Ofast -fexpensive-optimizations -flto -DTIME_IN_MSEC \
+CFLAGS := $(C_ARCH) -mplt -mno-shared -Ofast -fexpensive-optimizations -flto -DTIME_IN_MSEC -DTHREAD_ENABLED\
 	-Wall -Wunused -Wpointer-arith \
 	-Wno-sign-compare -Wno-cast-align \
 	-Isrc -Isrc/spu/$(SPU) -D$(SPU) -Isrc/gpu/$(GPU) \
