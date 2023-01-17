@@ -51,9 +51,6 @@ enum {
 	CMD_VIBRATION_TOGGLE = 0x4D,
 };
 
-#define PSE_PAD_TYPE_STANDARD  4
-#define PSE_PAD_TYPE_ANALOGJOY 5
-#define PSE_PAD_TYPE_ANALOGPAD 7
 unsigned char PAD1_startPoll()
 {
 	g.CurByte1 = 0;

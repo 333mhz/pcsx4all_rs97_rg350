@@ -538,6 +538,7 @@ static struct {
 	{ SDLK_DOWN,		DKEY_DOWN },
 	{ SDLK_LEFT,		DKEY_LEFT },
 	{ SDLK_RIGHT,		DKEY_RIGHT },
+#ifdef GCW_ZERO
 	{ SDLK_LSHIFT,		DKEY_SQUARE },
 	{ SDLK_LCTRL,		DKEY_CIRCLE },
 	{ SDLK_SPACE,		DKEY_TRIANGLE },
@@ -549,6 +550,17 @@ static struct {
 	{ SDLK_KP_DIVIDE,	DKEY_L3 },
 	{ SDLK_KP_PERIOD,	DKEY_R3 },
 	{ SDLK_ESCAPE,		DKEY_SELECT },
+#else
+	{ SDLK_a,		DKEY_SQUARE },
+	{ SDLK_x,		DKEY_CIRCLE },
+	{ SDLK_s,		DKEY_TRIANGLE },
+	{ SDLK_z,		DKEY_CROSS },
+	{ SDLK_q,		DKEY_L1 },
+	{ SDLK_w,		DKEY_R1 },
+	{ SDLK_e,		DKEY_L2 },
+	{ SDLK_r,		DKEY_R2 },
+	{ SDLK_BACKSPACE,	DKEY_SELECT },
+#endif
 	{ SDLK_RETURN,		DKEY_START },
 	{ 0, 0 }
 };
